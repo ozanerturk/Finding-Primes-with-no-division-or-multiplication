@@ -1,12 +1,10 @@
 
 def findPrimes(n):
     ar=[]
-    for i in range(0,n+1,1):
+    for i in range(2,n+1):
         ar.append(i)
 
-    ar[0]=0
-    ar[1]=0
-    i=2
+    i=0
     while True:
         for j in range(i*2,len(ar),i):
             ar[j]=0
